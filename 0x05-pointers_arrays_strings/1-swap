@@ -4,7 +4,7 @@
  * swap_int - swaps the values of two integers
  * @a: parameter one
  * @b: parameter two
- * Returns - nothing
+ * Returns: nothing
  */
 void swap_int(int *a, int *b)
 {
