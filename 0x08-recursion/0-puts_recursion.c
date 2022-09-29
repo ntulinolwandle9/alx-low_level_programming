@@ -4,11 +4,17 @@
 /**
  * _puts_recursion - prints a string followed by a new line
  * @s: string parameter
- * Return: returns 0
+ * Return: returns nothing
  */
 void _puts_recursion(char *s)
 {
-	_putchar("%c", *s);
-	_putchar('\n');
-	return (0);
+	if (*s == 0)
+	{
+		putchar(10);
+	}
+	else
+	{
+		putchar(*s);
+		_puts_recursion(s + 1);
+	}
 }
